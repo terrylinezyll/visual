@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice's Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="alice-icon.png" alt="Alice's Icon">
+        <h1>Alice's Journey</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to Alice's Journey</h2>
+            <p>Choose a topic to work on:</p>
+            <ul>
+                <li><button id="ptsd-btn">PTSD</button></li>
+                <li><button id="depression-btn">Depression</button></li>
+                <li><button id="eating-disorders-btn">Eating Disorders</button></li>
+                <li><button id="schizophrenia-btn">Schizophrenia</button></li>
+            </ul>
+        </section>
+        <section id="scenario-1" class="hidden">
+            <h2>Monday Morning</h2>
+            <p>Alice is feeling anxious about going to school. She keeps recalling the incident on her first day where she was embarrassed...</p>
+            <ul>
+                <li><button id="ptsd-answer">PTSD</button></li>
+                <li><button id="depression-answer">Depression</button></li>
+                <li><button id="bipolar-answer">Bipolar</button></li>
+            </ul>
+            <p id="feedback"></p>
+        </section>
+        <section id="scenario-2" class="hidden">
+            <h2>Alice's Dilemma</h2>
+            <p>Alice has had enough at school. She's scared and can't decide whether to quit or seek help...</p>
+            <ul>
+                <li><button id="quit-btn">Quit School</button></li>
+                <li><button id="seek-help-btn">Seek Help</button></li>
+            </ul>
+            <p id="help-choice-feedback"></p>
+        </section>
+        <section id="help-scenario" class="hidden">
+            <h2>Seeking Help</h2>
+            <p>Choose who Alice will seek help from:</p>
+            <ul>
+                <li><button id="mary-btn">Mary (Best Friend)</button></li>
+                <li><button id="parents-btn">Parents</button></li>
+                <li><button id="psychologist-btn">School Psychologist</button></li>
+            </ul>
+            <p id="help-choice-text"></p>
+            <button id="next-level-btn">Next Level</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
